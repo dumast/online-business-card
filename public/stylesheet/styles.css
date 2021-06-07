@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background-color: #1c1c1c;
+  color: white;
+  display: grid;
+  justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 400px;
+    min-height: 50px;
+    background-color: #373737;
+    border-radius: 30px;
+    display: grid;
+    padding: 10px;
+    box-sizing: border-box;
+    place-content: center;
+    grid-template-columns: 1fr 2fr;
+}

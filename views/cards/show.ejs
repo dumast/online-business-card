@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheet/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= card.name %></title>
+</head>
+<body>
+    <div>
+        <h1><%= card.name %></h1>
+        <% if(card.description){%>
+            <p><%= card.description %></p>
+        <%}%>
+        <% if(card.youtube.startsWith("https://www.youtube.com")){%>
+            <a href="<%= card.youtube %>" target="_blank"><%= card.youtube %></p>
+        <%}%>
+        <% if(card.twitch.startsWith("https://www.twitch.tv")){%>
+            <a href="<%= card.twitch %>" target="_blank"><%= card.twitch %></p>
+        <%}%>
+        <% if(card.facebook.startsWith("https://www.facebook.com")){%>
+            <a href="<%= card.facebook %>" target="_blank"><%= card.facebook %></p>
+        <%}%>
+        <% if(card.twitter.startsWith("https://www.twitter.com")){%>
+            <a href="<%= card.twitter %>" target="_blank"><%= card.twitter %></p>
+        <%}%>
+        <% if(card.tiktok.startsWith("https://www.tiktok.com")){%>
+            <a href="<%= card.tiktok %>" target="_blank"><%= card.tiktok %></p>
+        <%}%>
+        <% if(card.instagram.startsWith("https://www.instagram.com")){%>
+            <a href="<%= card.instagram %>" target="_blank"><%= card.instagram %></p>
+        <%}%>
+        <% if(card.linkedin.startsWith("https://www.linkedin.com")){%>
+            <a href="<%= card.linkedin %>" target="_blank"><%= card.linkedin %></p>
+        <%}%>
+        <% if(card.github.startsWith("https://www.github.com")){%>
+            <a href="<%= card.github %>" target="_blank"><%= card.github %></p>
+        <%}%>
+    </div>
+</body>
+</html>
