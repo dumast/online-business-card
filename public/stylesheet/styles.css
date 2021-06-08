@@ -1,24 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
 ::-webkit-scrollbar {
-  width: 0;
+  width: 0px;
+}
+
+:root {
+  --background-color: hsl(0, 0%, 11%);
+  --input-box: hsl(0, 0%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --link: hsl(0, 0%, 25%);
+  --transparent: hsla(0, 0%, 0%, 0);
 }
 
 body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  background-color: #1c1c1c;
+  background-color: var(--background-color);
   color: white;
   display: grid;
   justify-content: center;
   text-align: center;
+  margin: 0;
 }
 
 .form-group {
   text-align: left;
-  color: white;
+  color: var(--white);
   height: 50px;
-  background-color: #373737;
+  background-color: var(--input-box);
   border-radius: 13px;
   display: grid;
   padding: 10px;
@@ -38,12 +46,12 @@ body {
 .user-write {
   resize: none;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--transparent);
   outline: none;
   border: none;
   text-align: center;
   font-size: 30px;
-  color: white;
+  color: var(--white);
 }
 
 .user-write:focus {
@@ -58,26 +66,26 @@ body {
   font-size: 16px;
   height: 75%;
   float: right;
-  background-color: #373737;
+  background-color: var(--input-box);;
   outline: none;
   border: solid rgba(0, 0, 0, 0);
-  border-bottom: solid #c9c9c9;
-  color: white;
+  border-bottom: solid var(--white);
+  color: var(--white);
   transition: 0.2s;
 }
 
 .input:hover,
 input:focus {
   border-radius: 5px;
-  border: solid white;
+  border: solid var(--white);;
 }
 
 .publish {
   box-sizing: border-box;
   border-radius: 50px;
   border: none;
-  background-color: #373737;
-  color: white;
+  background-color: var(--input-box);;
+  color: var(--white);
   height: 55px;
   width: 140px;
   outline: none;
@@ -86,15 +94,15 @@ input:focus {
 }
 
 .publish:hover {
-  background-color: white;
-  color: #373737;
+  background-color: var(--white);
+  color: var(--input-box);
   transform: scale(1.05);
 }
 
 .publish:focus {
   border-radius: 0px;
-  background-color: white;
-  color: #373737;
+  background-color: var(--white);
+  color: var(--input-box);
 }
 
 .wrapper {
@@ -106,36 +114,38 @@ input:focus {
 
 .card {
   box-sizing: border-box;
-  background-color: #373737;
+  background-color: var(--input-box);;
   border-radius: 40px;
   width: max(1000px, 300px);
   text-align: center;
   display: grid;
-  min-height: 400px;
+  height: 500px;
   transition: transform 0.3s, box-shadow 0.3s;
   grid-template-areas:
     'n n'
     'l d';
   grid-template-rows: 25% 75%;
   grid-template-columns: 60% 40%;
+  padding: 30px;
 }
 
 .name {
   grid-area: n;
   margin-top: 20px;
   font-size: 50px;
-  color: white;
+  color: var(--white);
 }
 
 .links {
   grid-area: l;
-  margin-left: 30px;
   overflow: auto;
 }
 
 .link {
-  background-color: #3f3f3f;
-  color: white;
+  background-color: var(--link);
+  text-align: left;
+  color: var(--white);
+  font-size: 40px;
   border-radius: 10px;
   width: 80%;
   height:75px;
@@ -145,29 +155,53 @@ input:focus {
   border: none;
   transition: transform 0.4s, background-color 0.4s, color 0.4s;
   display: grid;
+  grid-template-columns: 40% 60%;
+  place-content: center;
+}
+
+.link img {
+  height: 65px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 500px) {
   .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 50px white;
+    box-shadow: 0 0 50px var(--white);
   }
 
   .link:hover {
-    background-color: white;
+    background-color: var(--white);
     transform: translate(30px);
-    color: #3f3f3f;
+    color: var(--link);
   } 
 }
 
 .description {
   grid-area: d;
+  word-wrap: break-word;
   text-align: justify;
   display: initial;
   box-sizing: border-box;
+  font-size: 30px;
   border-radius: 10px;
-  background-color: #3f3f3f;
+  background-color: var(--link);
   padding: 0 20px 0 20px;
+  overflow-y: auto;
   width: 100%;
   height: 100%;
+}
+
+:link, :visited {
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.footer img {
+  width: 30px;
+  margin-left: 10px;
+  transform: translateY(10px);
 }
