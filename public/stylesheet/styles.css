@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -7,17 +11,88 @@ body {
   color: white;
   display: grid;
   justify-content: center;
+  text-align: center;
 }
 
 .form-group {
-    margin-bottom: 20px;
-    width: 400px;
-    min-height: 50px;
-    background-color: #373737;
-    border-radius: 30px;
-    display: grid;
-    padding: 10px;
-    box-sizing: border-box;
-    place-content: center;
-    grid-template-columns: 1fr 2fr;
+  text-align: left;
+  color: white;
+  height: 50px;
+  background-color: #373737;
+  border-radius: 13px;
+  display: grid;
+  padding: 10px;
+  box-sizing: border-box;
+  place-content: center;
+  grid-template-columns: 1fr 2fr;
+  width: 500px;
+  margin: 20px 0 20px 0;
+  padding-top: 12px;
+}
+
+.write-group {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-write {
+  resize: none;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.user-write:focus {
+  border: none;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.input {
+  font-size: 16px;
+  height: 75%;
+  float: right;
+  background-color: #373737;
+  outline: none;
+  border: solid rgba(0, 0, 0, 0);
+  border-bottom: solid #c9c9c9;
+  color: white;
+  transition: 0.2s;
+}
+
+.input:hover,
+input:focus {
+  border-radius: 5px;
+  border: solid white;
+}
+
+.publish {
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: none;
+  background-color: #373737;
+  color: white;
+  height: 55px;
+  width: 140px;
+  outline: none;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.publish:hover {
+  background-color: white;
+  color: #373737;
+  transform: scale(1.05);
+}
+
+.publish:focus {
+  border-radius: 0px;
+  background-color: white;
+  color: #373737;
 }
