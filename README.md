@@ -3,7 +3,7 @@
 
 ## What is it?
 This is a fullstack website to regroup all of a person's social medias into one place, just like an online business card. 
-To use it, simply put your name (or group name), the links (they have to start with https://www) of your social medias in the corresponding spaces as well as a quick description and press publish
+To use it, simply put your name (or group name), the links (they have to start with https://www) of your social medias in the corresponding spaces as well as a quick description and press publish.
 
 ## Tech Stack
 * **ejs** for the frontend
