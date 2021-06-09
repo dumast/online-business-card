@@ -13,7 +13,7 @@ To use it, simply put your name (or group name), the links (they have to start w
 ## Requirements
 To use this app locally, you need:
 * **node**
-* **mongodb** (and connect to the app instead of the environment variable)
+* **mongodb** (and connect it to the app instead of the environment variable)
 
 ## How to install it?
 * *-git clone https://github.com/dumast/online-business-card.git*
