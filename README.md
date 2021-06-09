@@ -16,10 +16,10 @@ To use this app locally, you need:
 * **mongodb** (and connect it to the app instead of the environment variable)
 
 ## How to install it?
-* *-git clone https://github.com/dumast/online-business-card.git*
-* *-cd online-business-card*
-* *-npm install*
-* *-npm start*
+* *-- git clone https://github.com/dumast/online-business-card.git*
+* *-- cd online-business-card*
+* *-- npm install*
+* *-- npm start*
 
 ## Where is the app hosted?
 The app is currently hosted on Microsoft Azure, but the url is kept private for now
