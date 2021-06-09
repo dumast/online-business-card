@@ -8,7 +8,7 @@ To use it, simply put your name (or group name), the links (they have to start w
 ## Tech Stack
 * **ejs** for the frontend
 * **express js** for the backend
-* **mongodb** for the data base
+* **mongodb** for the database
 
 ## Requirements
 To use this app locally, you need:
