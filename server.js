@@ -23,8 +23,4 @@ app.use("/cards", cardRouter);
 
 app.use(express.static(__dirname + "/public"));
 
-app.listen("5000", "localhost", () => {
-  console.log("Server Started");
-});
-
 module.exports = app;
