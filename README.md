@@ -22,4 +22,4 @@ To use this app locally, you need:
 * *-- npm start*
 
 ## Where is the app hosted?
-The app is currently hosted on Microsoft Azure, but the url is kept private for now
+The app is currently hosted on Microsoft Azure, here is the link: [Online-Business-Card](https://online-business-card.azurewebsites.net/)
