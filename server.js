@@ -7,7 +7,8 @@ const app = express();
 dotenv.config();
 
 mongoose.connect(
-    process.env.MONGODB_LINK,
+  "mongodb://localhost/obc",
+  // process.env.MONGODB_LINK,
   { useUnifiedTopology: true, useNewUrlParser: true }
 );
 
@@ -23,4 +24,6 @@ app.use("/cards", cardRouter);
 
 app.use(express.static(__dirname + "/public"));
 
-module.exports = app;
+app.listen(3000, () => {
+  console.log("server is running")
+})
